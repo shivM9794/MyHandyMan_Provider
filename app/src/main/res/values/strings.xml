@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">MyHandyMan Provider</string>
+    <string name="disclaimer_txt">No responsibility disclaimers limit your liability for damages.\nViews expressed disclaimers allow you to distance yourself from others\' opinions.\nInvestment disclaimers state that you take no responsibility for how others act on your advice.</string>
+    <string name="signUp">By clicking SignUp, I agree to <font color='#FF000000'>Terms  &amp; Conditions</font></string>
+    <string name="address_user">Sarojini Park, Geeta Colony, New Delhi,110312</string>
+    <string name="address_user_new">Sarojini Park, Geeta Colony,\nNew Delhi,110312</string>
+    <string name="email">alex@gmail.com</string>
+    <string name="hired">Hired someone else</string>
+    <string name="service">Concerned about service hygiene</string>
+    <string name="service_not">Service not required at the booked time</string>
+    <string name="society">My society/buildings has restricted entry of\noutsiders</string>
+    <string name="professional">Professional not assigned</string>
+    <string name="placed">Placed the request by mistake</string>
+    <string name="others">Others</string>
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="signup">By clicking SignUp, I agree to <font color='#FF000000'>Terms  &amp; Conditions</font></string>
+    <string name="fan_repair">Repaired fan motor &amp; done oiling &amp;\nchanged the regulator</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="submit">Submit</string>
+    <string name="upload_aadhaar_card">Upload Aadhaar Card</string>
+    <string name="aadhaar_card_number">Aadhaar Card Number</string>
+    <string name="upload_sw_id">Upload SW Id</string>
+    <string name="second_warranty_no">Second Warranty No.</string>
+    <string name="upload_your_profile_picture">Upload Your Profile Picture</string>
+    <string name="add_personal_details">Add Personal Details</string>
+    <string name="location">Location</string>
+    <string name="customer_s_details">Customer\'s Info</string>
+    <string name="alex_george">Alex George</string>
+    <string name="_9090909090">9090909090</string>
+    <string name="booking_date">Booking Date</string>
+    <string name="booking_time">Booking Time</string>
+    <string name="_24_06_2021">24-06-2021</string>
+    <string name="_12_45_pm">12:45 PM</string>
+    <string name="call_now">Call Now</string>
+    <string name="job_work_details">Job (work) Details</string>
+    <string name="repair_range_estimation">Repair Range Estimation</string>
+    <string name="fan_not_working_rs_100_rs_350">Fan not working - Rs 100 - Rs 350</string>
+    <string name="fan_speed_is_low_rs_50_rs_100">Fan Speed is Low - Rs 50 - Rs 100</string>
+    <string name="disclaimer">Disclaimer</string>
+    <string name="cancel_booking">Cancel Booking</string>
+    <string name="settings">Settings</string>
+    <string name="bookings">Bookings</string>
+    <string name="off">Off</string>
+    <string name="on">On</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="off1">Off</string>
+    <string name="on1">On</string>
+    <string name="login1">Login</string>
+    <string name="already_have_an_account">Already have an Account ?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="others1">Others</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="select_gender">Select Gender</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile_number1">Mobile Number</string>
+    <string name="full_name">Full Name</string>
+    <string name="full_name1">Full Name</string>
+    <string name="submit1">Submit</string>
+</resources>

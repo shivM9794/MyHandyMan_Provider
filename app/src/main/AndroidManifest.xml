@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.secondwarranty.secondwarrantyprovider">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_provider"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SecondWarrantyProvider">
+        <activity
+            android:name=".LoginSection.SetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginSection.ResetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.HelpCentre"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.MyEarningsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.PrivacyPolicyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.TermsAndConditionActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.SettingsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.About_UsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.ProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.CancelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.See_DetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoardSection.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginSection.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".LoginSection.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".FirebaseMessageReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

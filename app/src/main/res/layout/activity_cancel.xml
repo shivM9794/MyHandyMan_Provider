@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashBoardSection.CancelActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="10"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_arrow_back" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:gravity="center"
+            android:layout_marginEnd="30dp"
+            android:text="Cancelation Reason"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:alpha="0.4"
+        android:background="@color/colorRemaining"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:layout_editor_absoluteX="16dp">
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:fontFamily="@font/open_sans_semibold"-->
+<!--            android:text="Cancelation Reason"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <View-->
+<!--            android:id="@+id/view1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:layout_marginRight="5dp"-->
+<!--            android:alpha="0.5"-->
+<!--            android:background="@color/colorRemaining" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_grp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radio_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/hired" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/service" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/service_not" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/society" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/professional" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/placed" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingStart="10dp"
+                    android:text="@string/others" />
+
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/others_reason_box"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/gray_color"
+                android:visibility="gone"
+                android:gravity="start"
+                android:hint="Enter Reason here..."
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/submit"
+
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

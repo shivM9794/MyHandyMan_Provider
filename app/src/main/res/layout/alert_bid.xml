@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp">
+
+
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_baseline_cancel_24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="Booking Accepted"
+                android:textColor="@color/yellow_stroke"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cancel">
+
+            </TextView>
+
+<!--            <TextView-->
+<!--                android:id="@+id/product_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" Product :"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/thank_you"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginStart="20dp"/>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/service_type_name"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Service Type"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/product_name"-->
+<!--                app:layout_constraintLeft_toLeftOf="parent"-->
+<!--                android:layout_marginStart="20dp"-->
+<!--                />-->
+
+            <TextView
+                android:id="@+id/view_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Our professionals will contact you shorty !"
+                android:textSize="15sp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent">
+            </TextView>
+
+            <TextView
+                android:id="@+id/thank_you"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thank You"
+                android:fontFamily="@font/open_sans_semibold"
+                android:textColor="@color/black"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view_msg"/>
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

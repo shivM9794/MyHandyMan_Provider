@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "960914431330",
+    "project_id": "second-warranty-provider",
+    "storage_bucket": "second-warranty-provider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960914431330:android:f935e66ce2b8f9f708e03b",
+        "android_client_info": {
+          "package_name": "com.secondwarranty.secondwarrantyprovider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960914431330-vvha4g4se256l1tnn5u8djegptpfn2fo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeAJtQFiK1gkS1CtsR0fOPMB8UDAETvGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960914431330-vvha4g4se256l1tnn5u8djegptpfn2fo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

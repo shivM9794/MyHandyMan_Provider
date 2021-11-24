@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DashBoardSection.DashboardActivity">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#F5F5F5"
+        android:theme="@style/navigationTheme"
+        app:headerLayout="@layout/side_nav_header"
+        app:menu="@menu/side_nav_menu">
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/stroke_yellow"
+            android:fontFamily="@font/open_sans"
+            android:text="@string/logout"
+            android:onClick="logoutBtn"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layoutToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/menu"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_weight="10"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/menu" />
+
+
+            <ImageView
+                android:id="@+id/logo_null"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_weight="70"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/provider_logo" />
+
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_weight="20"
+                android:layout_gravity="center"
+                android:src="@drawable/notification" />
+
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/gray_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutToolbar" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/completed_booking_cardView"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutToolbar"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txt_card2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="PAST\nBOOKINGS"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/complete_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintTop_toBottomOf="@+id/completed_booking_cardView" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/previous_booking_cardView"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view4"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:id="@+id/txt_card1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/open_sans_semibold"
+                android:gravity="center"
+                android:text="UPCOMING\nBOOKINGS"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/previous_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintTop_toBottomOf="@+id/previous_booking_cardView"
+            app:layout_constraintVertical_bias="0.025"
+            tools:layout_editor_absoluteX="-37dp" />
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/bottom_navigation"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            app:iconSize="20dp"
+            app:iconTint="#757575"
+            app:iconTintActive="@color/white"
+            app:indicatorColor="@color/stroke_yellow"
+            app:indicatorRadius="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_nav_menu"
+            app:textColor="@color/white"
+            app:textSize="15sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
